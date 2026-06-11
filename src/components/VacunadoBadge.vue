@@ -1,6 +1,6 @@
 <template>
   <span :class="['vacunado-badge', vacunado ? 'si' : 'no']">
-    {{ vacunado ? '✅ Sí, está vacunado' : '❌ No vacunado' }}
+    {{ vacunado ? ' Sí, está vacunado' : ' No vacunado' }}
   </span>
 </template>
 

@@ -1,27 +1,26 @@
-/* Globales */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
+/* src/assets/main.css */
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
   background: linear-gradient(135deg, #cef037 0%, #31741d 100%);
+  margin: 0;
   padding: 20px;
   min-height: 100vh;
-  overflow-x: hidden;   /* Evita scroll horizontal no deseado */
 }
 
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 15px;      /* Espaciado interno en pantallas pequeñas */
   width: 100%;
 }
 
-/* Para que las imágenes dentro de .container también sean responsive */
-.container img {
+/* Mejora legibilidad de textos */
+h1, h2, h3, p, span, button {
+  font-family: inherit;
+}
+
+/* Asegura que todas las imágenes no se desborden */
+img {
   max-width: 100%;
   height: auto;
 }
+

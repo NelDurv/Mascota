@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <h1 style="text-align: center; color: white">🐾 Elige tu mascota ideal 🐾</h1>
+    <h1 style="text-align: center; color: white"> Elige tu mascota ideal </h1>
 
     <MascotaSelector
       :mascotas="listaMascotas"
@@ -105,6 +105,8 @@ seleccionarMascota(listaMascotas.value[0])
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 0 20px;    /* ← Añade esto: 20px de padding izquierdo y derecho */
+  width: 100%;
+  box-sizing: border-box;
 }
 </style>
