@@ -1,44 +1,84 @@
-# mascota
+# 🐾 Mascota – Elige tu compañero ideal
 
-This template should help get you started developing with Vue 3 in Vite.
 
-## Recommended IDE Setup
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+Aplicación Vue 3 para explorar y seleccionar diferentes mascotas, cambiar sus fotos y conocer sus características.  
+Proyecto de aprendizaje enfocado en **`<script setup>`**, componentes reutilizables, props, emits y diseño responsive.
 
-## Recommended Browser Setup
+---
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+## 📁 Estructura del proyecto
+mascota/
+├── public/ # Imágenes de las mascotas (cabra.jpg, caballo.jpg, ...)
+├── src/
+│ ├── assets/ # Estilos globales (main.css)
+│ ├── components/
+│ │ ├── MascotaSelector.vue
+│ │ ├── MascotaCard.vue
+│ │ ├── MascotaInfo.vue
+│ │ ├── VacunadoBadge.vue
+│ │ └── BotonCambiarFoto.vue
+│ ├── App.vue # Componente raíz
+│ └── main.js # Punto de entrada
+├── index.html
+├── package.json
+└── vite.config.js
 
-## Customize configuration
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+---
 
-## Project Setup
+##  Etapas del proyecto
 
-```sh
+1. **Configuración inicial**  
+   - Creación del proyecto con `npm create vue@latest` (Vite + Vue 3).  
+   - Estructura de carpetas y archivos base.
+
+2. **Definición de datos**  
+   - Lista de mascotas en `App.vue` (nombre, tipo, edad, vacunado, fotos, características).  
+   - Estado reactivo con `ref`.
+
+3. **Componentes principales**  
+   - `MascotaSelector`: grilla con miniaturas, emite evento `seleccionar`.  
+   - `MascotaCard`: muestra la ficha completa, recibe `mascota` por props.  
+   - Subcomponentes: `MascotaInfo`, `VacunadoBadge`, `BotonCambiarFoto`.
+
+4. **Comunicación entre componentes**  
+   - Props hacia abajo (`:mascotas`, `:mascota`).  
+   - Emits hacia arriba (`@seleccionar`, `@cambiar-foto`).
+
+5. **Renderización dinámica**  
+   - `v-for` para listar mascotas y características.  
+   - `v-if` / `v-else` para estado de vacunación.  
+   - Atributos dinámicos (`:src`, `:class`).
+
+6. **Estilos y responsive**  
+   - CSS por componente (scoped).  
+   - Grid de 3 columnas en escritorio, 2 en tablet, 1 en móvil.  
+   - Corrección de desbordamientos y márgenes en pantallas pequeñas.
+
+7. **Mejoras finales**  
+   - Botón verde con texto negro, centrado y separado.  
+   - Información en línea horizontal.  
+   - Imagen principal 10% más pequeña.  
+   - Título separado 5px de la imagen.
+
+---
+##  GitHub 
+
+https://github.com/NelDurv/Mascota.git
+
+https://github.com/NelDurv/Mascota/commit/8ded414c600477d26ee191c4e0d854b55d3bc3db
+
+
+##  Cómo ejecutar
+
+```bash
 npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
 npm run dev
-```
 
-### Compile and Minify for Production
+Tecnologías
+Vue 3 (Composition API con <script setup>)
 
-```sh
-npm run build
-```
+Vite
 
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
+CSS moderno (Grid, Flexbox, media queries)
