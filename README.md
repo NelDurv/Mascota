@@ -1,6 +1,6 @@
 # 🐾 Mascota – Elige tu compañero ideal
 
-
+<img width="651" height="957" alt="image" src="https://github.com/user-attachments/assets/2381f3fa-2000-48c2-a9ad-f7a5e2370e7e" />
 
 Aplicación Vue 3 para explorar y seleccionar diferentes mascotas, cambiar sus fotos y conocer sus características.  
 Proyecto de aprendizaje enfocado en **`<script setup>`**, componentes reutilizables, props, emits y diseño responsive.
