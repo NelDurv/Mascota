@@ -25,6 +25,14 @@ mascota/
 └── vite.config.js
 
 
+
+
+
+
+
+
+
+
 ---
 
 ##  Etapas del proyecto
